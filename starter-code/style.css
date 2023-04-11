@@ -22,10 +22,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-hr{
-    display: flex;
-    flex: 1;
-}
 .menu{
     display: flex;
     background-color: grey;
@@ -43,4 +39,41 @@ hr{
     text-decoration: none;
     color: white;
 
+}
+.body{
+    display: flex;
+}
+.left, .right{
+    width: 50%;
+    /* align-items: center;
+    justify-content: center;
+    align-self: center;  */
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    /* width: 30%; */
+}
+.left p, h3, h1{
+    color: white;
+}
+.left h1{
+    font-size: 600%;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.circle{
+    border-radius: 50%;
+    background-color: beige;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
