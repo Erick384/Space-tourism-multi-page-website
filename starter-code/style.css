@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    display: flex;
+    flex: 1;
+}
+.menu{
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    padding: 1rem;
+}
+.menu ul {
+    display: flex;
+    gap: 1rem;
+}
+.menu ul li{
+    list-style-type: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+
+}
