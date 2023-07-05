@@ -1,13 +1,31 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+.nav{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  width: 100%;
+}
+.menu{
+  display: flex;
+  gap: 3rem;
+  background-color: hsla(204, 80%, 16% , .8);
+  align-items: center;
+  padding: 1rem;
+}
+.menu div a{
+  font-weight: 500;
+  text-transform: capitalize;
+  color: white;
 
+}
+.menu div:hover {
+  text-decoration: underline;
+}
 .logo {
-  height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -17,63 +35,31 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body{
+.content{
   display: flex;
-  background-image: url(./assets/home/background-home-desktop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  padding: 2rem;
-}
-.container{
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-.nav{
-  display: flex;
-  justify-content: space-between;
-}
-.menu{
-  display: flex;
-  background-color: grey;
+  place-items: center;
   align-items: center;
-  padding: 1rem;
-}
-.menu ul {
-  display: flex;
-  gap: 1rem;
-}
-.menu ul li{
-  list-style-type: none;
-}
-.menu ul li a{
-  text-decoration: none;
-  color: white;
-
-}
-.body{
-  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 .left, .right{
   width: 50%;
-  /* align-items: center;
-  justify-content: center;
-  align-self: center;  */
 }
 .left{
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 3rem ;
-  /* width: 30%; */
+}
+.headerOne{
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 50px;
+}
+.headerTwo{
+  font-weight: 300;
 }
 .left p, h3, h1{
   color: white;
@@ -90,11 +76,15 @@ body{
 .circle{
   border-radius: 50%;
   background-color: beige;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.circle h1{
+  color: hsl(204, 80%, 16%);
+  font-weight: 300;
 }
 @keyframes logo-spin {
   from {
