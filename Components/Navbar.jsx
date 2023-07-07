@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -16,18 +16,21 @@ const Navbar = () => {
         </svg>
       </div>
       <div className="menu">
-        <Navlink to="/">
-          <div>00 Home</div>
-        </Navlink>
-        <Navlink to="/Destination">
-          <div>01 Destination</div>
-        </Navlink>
-        <Navlink to="/Crew">
-          <div>02 Crew</div>
-        </Navlink>
-        <Navlink to="/Technology">
-          <div>03 Technology</div>
-        </Navlink>
+        <div>
+          <link to="/">00 Home</link>
+        </div>
+
+        <div>
+          <link to="/destination">01 Destination</link>
+        </div>
+
+        <div>
+          <link to="/crew">02 Crew</link>
+        </div>
+
+        <div>
+          <link to="/technology">03 Technology</link>
+        </div>
       </div>
     </div>
   );
