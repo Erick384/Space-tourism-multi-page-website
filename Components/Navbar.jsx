@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="nav">
       <div className="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-          <g fill="none" fill-rule="evenodd">
+          <g fill="none" fillRule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />
             <path
               fill="#0B0D17"
@@ -15,21 +15,23 @@ const Navbar = () => {
           </g>
         </svg>
       </div>
+      <br />
+    <div className="border-line"></div>
       <div className="menu">
         <div>
-          <link to="/">00 Home</link>
+          <NavLink exact to="/">00 HOME</NavLink>
         </div>
 
         <div>
-          <link to="/destination">01 Destination</link>
+          <NavLink to="/destination">01 DESTINATION</NavLink>
         </div>
 
         <div>
-          <link to="/crew">02 Crew</link>
+          <NavLink to="/crew">02 CREW</NavLink>
         </div>
 
         <div>
-          <link to="/technology">03 Technology</link>
+          <NavLink to="/technology">03 TECHNOLOGY</NavLink>
         </div>
       </div>
     </div>

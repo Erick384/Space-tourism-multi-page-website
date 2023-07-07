@@ -3,20 +3,19 @@ import DestNavBar from "./DestNavBar";
 
 const DestinationMoon = () => {
   return (
-    <>
+    <div className="body">
       <div className="dest-header">
         <span>01</span>
         <h2>PICK YOUR DESTINATION</h2>
       </div>
-      <div className="content">
+      <div className="dest-content">
         <div className="dest-left"></div>
-        <div className="right">
+        <div className="dest-right">
           <DestNavBar />
           <div className="destright-header">
             <h1>MOON</h1>
           </div>
           <p>
-            {" "}
             See our planet as you’ve never seen it before. A perfect relaxing
             trip away to help regain perspective and come back refreshed. While
             you’re there, take in some history by visiting the Luna 2 and Apollo
@@ -35,7 +34,7 @@ const DestinationMoon = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,54 @@
+body{
+    background-image: url(/src/assets/destination/background-destination-desktop.jpg);
+}
+.dest-nav{
+    display: flex;
+    gap: 2rem;
+}
+.dest-nav a{
+    color: hsl(0, 50%, 100%);
+    font-weight: 400;
+    text-decoration: inherit
+}
+.dest-nav a.active{
+    text-decoration: underline;
+
+}
+.dest-header{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* border: 1px solid red; */
+    margin-left: 5%;
+    grid-column: 1 / span 2;
+}
+.body{
+    gap: 4rem;
+    /* border: 1px solid red; */
+    padding: 2rem;
+}
+.dest-content{
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 80%;
+}
+.dest-left{
+    background-image: url(/src/assets/destination/image-moon.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+}
+.dest-right{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+}
+.dest-right, .dest-left{
+    width: 50%;
+}
+.dest-footer{
+    display: flex;
+    justify-content: space-between;
+}

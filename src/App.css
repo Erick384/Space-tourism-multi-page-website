@@ -3,41 +3,75 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100%;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100vh;
+  background-image: url(./assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* border: 1px solid red; */
+}
+.body{
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+  height: 100%;
+}
 .nav{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
+  margin-top: 3rem;
+}
+.border-line{
+  border: 1px solid grey;
+  flex: 1;
+}
+.logo{
+  margin-left: 2%;
 }
 .menu{
   display: flex;
+  justify-content: center;
   gap: 3rem;
   background-color: hsla(204, 80%, 16% , .8);
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem;
+  width: 60%;
 }
 .menu div a{
   font-weight: 500;
-  text-transform: capitalize;
   color: white;
-
+  text-decoration: inherit;
 }
-.menu div:hover {
+.menu div a.active {
   text-decoration: underline;
 }
-.logo {
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.content{
+.home-content{
+  /* border: 1px solid red; */
   display: flex;
-  place-items: center;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -85,26 +119,4 @@
 .circle h1{
   color: hsl(204, 80%, 16%);
   font-weight: 300;
-}
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
