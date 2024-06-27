@@ -1,5 +1,4 @@
-import React from "react";
-import "./App.css";
+import "./index.css";
 import Navbar from "../Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "../Components/Home";
@@ -9,7 +8,10 @@ import TechnologyVehicle from "../Components/Technology/TechnologyVehicle";
 
 const App = () => {
   return (
-    <body>
+    <body
+      className="flex flex-col h-screen my-12 bg-cover bg-center"
+      style="background-image: url('./assets/home/background-home-desktop.jpg');"
+    >
       <Navbar />
       <div>
         <Routes>

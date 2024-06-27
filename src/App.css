@@ -53,9 +53,6 @@ body {
   margin-left: 2%;
 }
 .menu{
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
   background-color: hsla(204, 80%, 16% , .8);
   align-items: center;
   padding: 2.5rem;

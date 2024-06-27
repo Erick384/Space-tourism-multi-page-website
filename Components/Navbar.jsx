@@ -1,9 +1,8 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="nav">
+    <div className="flex flex-row items-center justify-between w-full">
       <div className="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
           <g fill="none" fillRule="evenodd">
@@ -16,10 +15,12 @@ const Navbar = () => {
         </svg>
       </div>
       <br />
-    <div className="border-line"></div>
-      <div className="menu">
+      <div className="border-line"></div>
+      <div className="flex flex-row justify-center items-center gap-12">
         <div>
-          <NavLink exact to="/">00 HOME</NavLink>
+          <NavLink exact to="/">
+            00 HOME
+          </NavLink>
         </div>
 
         <div>
